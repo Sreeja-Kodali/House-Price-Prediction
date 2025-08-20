@@ -13,24 +13,23 @@ The Housing Price Prediction  project analyzes features like location, area, bed
 
 ---
 
-##  Features
-| |
-|---|
-| 📊 **Accurate Predictions** – Estimate house prices based on multiple features. |
-| 🏙️ **Location Insights** – Understand how location affects property value. |
-| 🔎 **Feature Selection** – Identifies the most important factors influencing prices. |
-| 📈 **Data Visualization** – Explore real estate trends with charts and graphs. |
-| 🧠 **Regression Models** – Linear Regression, Decision Tree, Random Forest. |
-| 🛠️ **Custom Input** – Predict price by entering property details manually. |
+## ✨ Features  
+
+- 📊 **Accurate Predictions** – Estimate house prices based on multiple features.  
+- 🏙️ **Location Insights** – Understand how location affects property value.  
+- 🔎 **Feature Selection** – Identifies the most important factors influencing prices.  
+- 📈 **Data Visualization** – Explore real estate trends with charts and graphs.  
+- 🧠 **Regression Models** – Uses ML algorithms like Linear Regression, Decision Tree, Random Forest.  
+- 🛠️ **Custom Input** – Predict price by entering property details manually.  
 
 ---
 
-##  Use Cases
-| |
-|---|
-| 🏠 **Home Buyers** – Check if a property is fairly priced. |
-| 🏘️ **Sellers** – Decide the right listing price. |
-| 💼 **Real Estate Agents** – Provide clients with accurate, data-driven insights. |
-| 🏦 **Banks & Lenders** – Assist in property valuation for mortgage and loans. |
-| 📚 **Students & Researchers** – Learn how ML models apply to real-world data. |
+## 💡 Use Cases  
 
+- 🏠 **Home Buyers** – Check if a property is fairly priced.  
+- 🏘️ **Sellers** – Decide the right listing price.  
+- 💼 **Real Estate Agents** – Provide clients with accurate, data-driven insights.  
+- 🏦 **Banks & Lenders** – Assist in property valuation for mortgage and loans.  
+- 📚 **Students & Researchers** – Learn how ML models apply to real-world data.  
+
+---
