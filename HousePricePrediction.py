@@ -9,6 +9,7 @@ st.set_page_config(
     page_icon="🏠",
     layout="wide"
 )
+st.title("Housing Price Prediction ")
 
 # Load Dataset
 df = pd.read_excel("House Price Prediction Dataset.xlsx")
