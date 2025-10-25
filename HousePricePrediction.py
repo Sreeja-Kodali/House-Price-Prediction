@@ -1,7 +1,11 @@
 import pandas as pd
+import streamlit as st
 from sklearn.impute import SimpleImputer
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+st.set_page_config(page_title="Housing Price Prediction", layout="wide")
+st.title("🏠 Housing Price Prediction Data Analysis")
 
 # Load Dataset
 df = pd.read_excel("House Price Prediction Dataset.xlsx")
@@ -53,22 +57,27 @@ sns.set(style="whitegrid")
 
 # Sale Price Distribution
 if 'SalePrice' in df.columns:
+    st.write("#### Sale Price Distribution")
     plt.figure(figsize=(8,5))
     sns.histplot(df['SalePrice'], kde=True, color='skyblue')
     plt.title("Distribution of House Sale Prices")
     plt.xlabel("Sale Price")
     plt.ylabel("Frequency")
-    plt.show()
+    st.pyplot(plt)
+
 
 # Correlation Heatmap (numeric columns)
+st.write("#### Correlation Heatmap")
 plt.figure(figsize=(10,8))
 corr = df.corr(numeric_only=True)
 sns.heatmap(corr, annot=True, cmap='coolwarm')
 plt.title("Correlation Heatmap of Numeric Features")
-plt.show()
+st.pyplot(plt)
+
 
 #  Average Sale Price by Neighborhood
 if 'Neighborhood' in df.columns:
+    st.write("#### Top 10 Neighborhoods by Average Sale Price")
     plt.figure(figsize=(12,6))
     neigh_avg = df.groupby('Neighborhood')['SalePrice'].mean().sort_values(ascending=False).head(10)
     sns.barplot(x=neigh_avg.index, y=neigh_avg.values)
@@ -76,24 +85,27 @@ if 'Neighborhood' in df.columns:
     plt.xlabel("Neighborhood")
     plt.ylabel("Average Sale Price")
     plt.xticks(rotation=45)
-    plt.show()
+    st.pyplot(plt)
+
 
 # Sale Price vs GrLivArea (scatter)
 if 'GrLivArea' in df.columns:
+    st.write("#### Sale Price vs GrLivArea")
     plt.figure(figsize=(8,5))
     sns.scatterplot(data=df, x='GrLivArea', y='SalePrice', color='orange')
     plt.title("Sale Price vs Living Area (GrLivArea)")
     plt.xlabel("GrLivArea (sq ft)")
     plt.ylabel("Sale Price")
-    plt.show()
+    st.pyplot(plt)
 
 # Sale Price vs Overall Quality (boxplot)
 if 'OverallQual' in df.columns:
+    st.write("#### Sale Price vs Overall Quality")
     plt.figure(figsize=(7,4))
     sns.boxplot(data=df, x='OverallQual', y='SalePrice')
     plt.title("Sale Price Distribution by Overall Quality")
     plt.xlabel("Overall Quality")
     plt.ylabel("Sale Price")
-    plt.show()
+    st.pyplot(plt)
 
 print("\n Visualization and analysis completed successfully!")
