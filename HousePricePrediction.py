@@ -4,8 +4,11 @@ from sklearn.impute import SimpleImputer
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.set_page_config(page_title="Housing Price Prediction", layout="wide")
-st.title("🏠 Housing Price Prediction Data Analysis")
+st.set_page_config(
+    page_title="Housing Price Prediction",
+    page_icon="🏠",
+    layout="wide"
+)
 
 # Load Dataset
 df = pd.read_excel("House Price Prediction Dataset.xlsx")
