@@ -31,5 +31,3 @@ The House Price Prediction  project analyzes features like location, area, bedro
 - 💼 **Real Estate Agents** – Provide clients with accurate, data-driven insights.  
 - 🏦 **Banks & Lenders** – Assist in property valuation for mortgage and loans.  
 - 📚 **Students & Researchers** – Learn how ML models apply to real-world data.  
-
----
