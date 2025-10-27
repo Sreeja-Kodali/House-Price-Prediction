@@ -19,7 +19,6 @@ The House Price Prediction  project analyzes features like location, area, bedro
 - 🏙️ **Location Insights** – Understand how location affects property value.  
 - 🔎 **Feature Selection** – Identifies the most important factors influencing prices.  
 - 📈 **Data Visualization** – Explore real estate trends with charts and graphs.  
-- 🧠 **Regression Models** – Uses ML algorithms like Linear Regression, Decision Tree, Random Forest.  
 - 🛠️ **Custom Input** – Predict price by entering property details manually.  
 
 ---
